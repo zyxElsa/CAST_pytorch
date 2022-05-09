@@ -134,7 +134,7 @@ For packages, see requirements.txt.
 
    Clone the repo
    ```sh
-   git clone https://github.com/zyxElsa/CAST-pyotrch.git
+   git clone https://github.com/zyxElsa/CAST-pytorch.git
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
