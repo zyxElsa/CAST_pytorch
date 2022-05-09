@@ -130,6 +130,8 @@ For packages, see requirements.txt.
   pip install requirements.txt
   ```
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Installation
 
    Clone the repo
@@ -139,6 +141,22 @@ For packages, see requirements.txt.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Datasets
+
+   Then put your content images in ./datasets/{datasets_name}/testA, and style images in ./datasets/{datasets_name}/testB.
+   
+   Example directory hierarchy:
+   ```sh
+      CAST-pytorch
+      |--- datasets
+             |--- {datasets_name}
+                   |--- testA
+                   |--- testB
+                   
+      Then, call --dataroot ./datasets/{datasets_name}
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Train
 
@@ -152,6 +170,7 @@ For packages, see requirements.txt.
 ### Test
 
    Test the CAST model:
+   
    ```sh
    python test.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
