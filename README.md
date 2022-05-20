@@ -86,13 +86,15 @@
 ![teaser](./Images/teaser.png)
 
 
-We provide our PyTorch implementation of the paper “Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning”(SIGGRAPH 2022)(http://arxiv.org/abs/2205.09542), which is a simple yet powerful model for arbitrary style transfer. 
+We provide our PyTorch implementation of the paper “Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning”(SIGGRAPH 2022), which is a simple yet powerful model for arbitrary style transfer. 
 
 In this work, we tackle the challenging problem of arbitrary image style transfer using a novel style feature representation learning method.
 A suitable style representation, as a key component in image stylization tasks, is essential to achieve satisfactory results.
 Existing deep neural network based approaches achieve reasonable results with the guidance from second-order statistics such as Gram matrix of content features.
 However, they do not leverage sufficient style information, which results in artifacts such as local distortions and style inconsistency.
 To address these issues, we propose to learn style representation directly from image features instead of their second-order statistics, by analyzing the similarities and differences between multiple styles and considering the style distribution.
+
+For details see the [paper](http://arxiv.org/abs/2205.09542)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -183,16 +185,11 @@ For packages, see requirements.txt.
 ### Citation
    
    ```sh
-   @misc{https://doi.org/10.48550/arxiv.2205.09542,
-   doi = {10.48550/ARXIV.2205.09542},
-   url = {https://arxiv.org/abs/2205.09542},
+   @inproceedings{zhang2020cast,
    author = {Zhang, Yuxin and Tang, Fan and Dong, Weiming and Huang, Haibin and Ma, Chongyang and Lee, Tong-Yee and Xu, Changsheng},
-   keywords = {Computer Vision and Pattern Recognition (cs.CV), Graphics (cs.GR), FOS: Computer and information sciences, FOS: Computer and information sciences},
    title = {Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning},
-   publisher = {arXiv},
-   year = {2022},
-   copyright = {arXiv.org perpetual, non-exclusive license}
-   }
+   booktitle = {ACM SIGGRAPH},
+   year = {2022}}
    ```
    
 <p align="right">(<a href="#top">back to top</a>)</p>
