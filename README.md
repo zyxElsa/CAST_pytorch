@@ -177,7 +177,11 @@ For packages, see requirements.txt.
    python test.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
    
-   * The pretrained model is saved at ./checkpoints/{model_name}/ Check [here]() for all the available CAST models.
+   The pretrained model is saved at ./checkpoints/CAST_model/*.pth.
+   
+   BaiduNetdisk: Check [here](https://pan.baidu.com/s/12oPk3195fntMEHdlsHNwkQ) (passwd：cast) 
+   
+   Google Drive:Coming soon.
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
