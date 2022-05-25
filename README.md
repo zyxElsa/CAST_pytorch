@@ -181,7 +181,7 @@ For packages, see requirements.txt.
    
    BaiduNetdisk: Check [here](https://pan.baidu.com/s/12oPk3195fntMEHdlsHNwkQ) (passwd：cast) 
    
-   Google Drive:Coming soon.
+   Google Drive: Check [here](https://drive.google.com/file/d/11dZqu95QfnAgkzgR1NTJfQutz8JlwRY8/view?usp=sharing)
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
