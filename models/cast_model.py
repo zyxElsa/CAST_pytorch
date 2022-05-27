@@ -8,13 +8,13 @@ import torch.nn as nn
 from torch.nn import init
 
 class CASTModel(BaseModel):
-    """ This class implements DCLGAN model.
-    This code is inspired by CUT and CycleGAN.
+    """ This class implements CAST model.
+    This code is inspired by DCLGAN and CycleGAN.
     """
 
     @staticmethod
     def modify_commandline_options(parser, is_train=True):
-        """  Configures options specific for DCLGAN """
+        """  Configures options specific for CAST """
         parser.add_argument('--CAST_mode', type=str, default="CAST", choices='CAST')
 
         parser.set_defaults(pool_size=0)  # no image pooling
