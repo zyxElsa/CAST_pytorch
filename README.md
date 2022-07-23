@@ -149,9 +149,11 @@ For packages, see requirements.txt.
    
    Example directory hierarchy:
    ```sh
-      CAST-pytorch
+      CAST_pytorch
       |--- datasets
              |--- {datasets_name}
+                   |--- trainA
+                   |--- trainB
                    |--- testA
                    |--- testB
                    
