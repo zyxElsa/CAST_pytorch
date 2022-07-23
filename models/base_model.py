@@ -2,6 +2,7 @@ import os
 import torch
 from collections import OrderedDict
 from abc import ABC, abstractmethod
+from . import networks
 
 
 class BaseModel(ABC):
@@ -80,6 +81,10 @@ class BaseModel(ABC):
         """Run forward pass; called by both functions <optimize_parameters> and <test>."""
         pass
 
+    @abstractmethod
+    def optimize_parameters(self):
+        """Calculate losses, gradients, and update network weights; called in every training iteration"""
+        pass
 
     def setup(self, opt):
         """Load and print networks; create schedulers
@@ -88,7 +93,7 @@ class BaseModel(ABC):
             opt (Option class) -- stores all the experiment flags; needs to be a subclass of BaseOptions
         """
         if self.isTrain:
-            self.schedulers = [DE.get_scheduler(optimizer, opt) for optimizer in self.optimizers]
+            self.schedulers = [networks.get_scheduler(optimizer, opt) for optimizer in self.optimizers]
         if not self.isTrain or opt.continue_train:
             load_suffix = opt.epoch
             self.load_networks(load_suffix)

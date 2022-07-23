@@ -74,13 +74,6 @@ class ADAIN_Encoder(nn.Module):
             for param in getattr(self, name).parameters():
                 param.requires_grad = False
 
-        if len(gpu_ids) > 0:
-            assert(torch.cuda.is_available())
-            self.enc_1.to(gpu_ids[0])
-            self.enc_2.to(gpu_ids[0])
-            self.enc_3.to(gpu_ids[0])
-            self.enc_4.to(gpu_ids[0])
-
     # extract relu1_1, relu2_1, relu3_1, relu4_1 from input image
     def encode_with_intermediate(self, input):
         results = [input]
@@ -153,9 +146,6 @@ class Decoder(nn.Module):
             nn.Conv2d(64, 3, (3, 3))
             ]
         self.decoder = nn.Sequential(*decoder)
-        if len(gpu_ids) > 0:
-            assert(torch.cuda.is_available())
-            self.decoder.to(gpu_ids[0])
 
     def forward(self, adain_feat):
         fake_image = self.decoder(adain_feat)
