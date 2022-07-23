@@ -129,7 +129,7 @@ PyTorch 1.6 or above
 For packages, see requirements.txt.
 
   ```sh
-  pip install requirements.txt
+  pip install -r requirements.txt
   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
