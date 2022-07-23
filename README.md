@@ -164,7 +164,7 @@ For packages, see requirements.txt.
 
    Train the CAST model:
    ```sh
-   coming soon ...
+   python train.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
    
 <p align="right">(<a href="#top">back to top</a>)</p>
