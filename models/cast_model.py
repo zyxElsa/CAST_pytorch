@@ -30,7 +30,7 @@ class CASTModel(BaseModel):
         
         parser.add_argument('--lambda_CYC', type=float, default=4.0, help='weight for l1 reconstructe loss:||Ic - G(G(Ic, Is),Ic)||')
         
-        parser.add_argument('--nce_layers', type=str, default='0', help='compute NCE loss on which layers')
+        parser.add_argument('--nce_layers', type=str, default='0,1,2,3', help='compute NCE loss on which layers')
 
         parser.set_defaults(pool_size=0)  # no image pooling
 
@@ -143,7 +143,7 @@ class CASTModel(BaseModel):
             self.loss_D.backward(retain_graph=True)
             self.optimizer_D.step()
         
-        # update P
+        # update MSP
         if self.opt.lambda_NCE_D > 0.0:
             self.set_requires_grad([self.netD, self.netP_style], True)
             self.set_requires_grad([self.netAE, self.netDec_A,self.netDec_B, self.netD_A, self.netD_B ], False)
