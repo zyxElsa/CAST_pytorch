@@ -94,7 +94,7 @@ Existing deep neural network based approaches achieve reasonable results with th
 However, they do not leverage sufficient style information, which results in artifacts such as local distortions and style inconsistency.
 To address these issues, we propose to learn style representation directly from image features instead of their second-order statistics, by analyzing the similarities and differences between multiple styles and considering the style distribution.
 
-For details see the [paper](http://arxiv.org/abs/2205.09542)
+For details see the [paper](http://arxiv.org/abs/2205.09542) and the [video](https://youtu.be/3RG2yjLKTus)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
