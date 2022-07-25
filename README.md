@@ -169,6 +169,10 @@ For packages, see requirements.txt.
    python train.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
    
+   The pretrained style classification model is saved at ./models/style_vgg.pth.
+   
+   Google Drive: Check [here](https://drive.google.com/file/d/12JKlL6QsVWkz6Dag54K59PAZigFBS6PQ/view?usp=sharing)
+   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Test
