@@ -173,6 +173,10 @@ For packages, see requirements.txt.
    
    Google Drive: Check [here](https://drive.google.com/file/d/12JKlL6QsVWkz6Dag54K59PAZigFBS6PQ/view?usp=sharing)
    
+   The pretrained content encoder is saved at ./models/vgg_normalised.pth.
+   
+   Google Drive: Check [here](https://drive.google.com/file/d/1DKYRWJUKbmrvEba56tuihy1N6VrNZFwl/view?usp=sharing)
+   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Test
