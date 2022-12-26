@@ -143,7 +143,7 @@ For packages, see requirements.txt.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Datasets
+### Datasets (Carol: this is needed only when training)
 
    Then put your content images in ./datasets/{datasets_name}/testA, and style images in ./datasets/{datasets_name}/testB.
    
@@ -180,6 +180,13 @@ For packages, see requirements.txt.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Test
+    (Carol: we can run this only for inferencing -> run test.py outside the folders.
+             I don't think it is necessary to have any data in /data set folder by default.
+             by default, the pretained model should be put at ./checkpoints/experiment_name/*.pth.
+             (I have place then in the right folder so you don't have to download the model again.)
+             put your content images in ./placeholder/testA, and style image in ./placeholder/testB
+             and your results will be in ./results/experimen_name/test_latest
+             )
 
    Test the CAST model:
    
