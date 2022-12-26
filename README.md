@@ -143,7 +143,8 @@ For packages, see requirements.txt.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Datasets (Carol: this is needed only when training)
+### Datasets
+    (Carol: this is needed only when training)
 
    Then put your content images in ./datasets/{datasets_name}/testA, and style images in ./datasets/{datasets_name}/testB.
    
