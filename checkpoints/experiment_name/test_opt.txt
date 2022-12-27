@@ -54,5 +54,7 @@
                 style_dim: 256                           
                    suffix:                               
               temperature: 0.07                          
+                use_video: True                          	[default: False]
                   verbose: False                         
+               video_name: ./placeholder/testA/video_0.mp4	[default: None]
 ----------------- End -------------------
