@@ -181,6 +181,7 @@ For packages, see requirements.txt.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Test
+```
     (Carol: we can run this only for inferencing -> run test.py outside the folders.
              I don't think it is necessary to have any data in /data set folder by default.
              by default, the pretained model should be put at ./checkpoints/experiment_name/*.pth.
@@ -188,6 +189,13 @@ For packages, see requirements.txt.
              put your content images in ./placeholder/testA, and style image in ./placeholder/testB
              and your results will be in ./results/experimen_name/test_latest
              )
+```             
+(子鈞 video): 
+```
+python test.py --use_video --video_name <path_to_video_file>
+```
+注: <path_to_video_file> 是指定到video的filename
+在使用video時，```./placeholder/testA```裏面的所有照片會被remove， ```./placeholder/testB``` 僅限放一張style image
 
    Test the CAST model:
    
