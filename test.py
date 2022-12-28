@@ -107,8 +107,9 @@ if __name__ == '__main__':
     if not use_video:
         webpage.save()  # save the HTML
     
-    print(f'framerate is {framerate}')
-    output_video_path = './output_transfer_video/'
-    if not os.path.exists(output_video_path):
-        os.makedirs(output_video_path)
-    makeVideo2(video_frame, output_video_path , framerate)
+    if use_video:
+        print(f'framerate is {framerate}')
+        output_video_path = './output_transfer_video/'
+        if not os.path.exists(output_video_path):
+            os.makedirs(output_video_path)
+        makeVideo2(video_frame, output_video_path , framerate)
