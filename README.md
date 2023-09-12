@@ -80,13 +80,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning (CAST)
+## Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning (CAST) <br> A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning (UCAST)
 
 <!-- ![teaser](./Images/teaser.png) -->
 ![teaser](./Images/teaser.png)
 
 
-We provide our PyTorch implementation of the paper “Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning”(SIGGRAPH 2022), which is a simple yet powerful model for arbitrary style transfer. 
+We provide our PyTorch implementation of the paper ''Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning''(SIGGRAPH 2022) , which is a simple yet powerful model for arbitrary image style transfer, and ''A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning''(ACM Transactions on Graphics) , which is a improved arbitrary style style transfer method.
 
 In this work, we tackle the challenging problem of arbitrary image style transfer using a novel style feature representation learning method.
 A suitable style representation, as a key component in image stylization tasks, is essential to achieve satisfactory results.
@@ -94,7 +94,7 @@ Existing deep neural network based approaches achieve reasonable results with th
 However, they do not leverage sufficient style information, which results in artifacts such as local distortions and style inconsistency.
 To address these issues, we propose to learn style representation directly from image features instead of their second-order statistics, by analyzing the similarities and differences between multiple styles and considering the style distribution.
 
-For details see the [paper](http://arxiv.org/abs/2205.09542) and the [video](https://youtu.be/3RG2yjLKTus)
+For details see the papers [CAST](http://arxiv.org/abs/2205.09542) , [UCAST](https://arxiv.org/abs/2303.12710), and the [video](https://youtu.be/3RG2yjLKTus)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,7 +181,7 @@ For packages, see requirements.txt.
 
 ### Test
 
-   Test the CAST model:
+   Test the CAST or UCAST model:
    
    ```sh
    python test.py --dataroot ./datasets/{dataset_name} --name {model_name}
@@ -189,9 +189,11 @@ For packages, see requirements.txt.
    
    The pretrained model is saved at ./checkpoints/CAST_model/*.pth.
    
-   BaiduNetdisk: Check [here](https://pan.baidu.com/s/12oPk3195fntMEHdlsHNwkQ) (passwd：cast) 
+   BaiduNetdisk: Check [CAST model](https://pan.baidu.com/s/12oPk3195fntMEHdlsHNwkQ) (passwd：cast) 
    
-   Google Drive: Check [here](https://drive.google.com/file/d/11dZqu95QfnAgkzgR1NTJfQutz8JlwRY8/view?usp=sharing)
+   Google Drive: Download [CAST model](https://drive.google.com/file/d/11dZqu95QfnAgkzgR1NTJfQutz8JlwRY8/view?usp=sharing) and [UCAST model](https://drive.google.com/file/d/1rU8haiPG2BDhh5BNSwngjMKBKdutDYTJ/view?usp=sharing) (for video style transfer).
+
+   
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -204,6 +206,16 @@ For packages, see requirements.txt.
    title = {Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning},
    booktitle = {ACM SIGGRAPH},
    year = {2022}}
+   ```
+
+   ```sh
+  @article{zhang2023unified,
+    title={A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning},
+    author={Zhang, Yuxin and Tang, Fan and Dong, Weiming and Huang, Haibin and Ma, Chongyang and Lee, Tong-Yee and Xu, Changsheng},
+    journal={ACM Transactions on Graphics},
+    year={2023},
+    publisher={ACM New York, NY}
+  }
    ```
    
 <p align="right">(<a href="#top">back to top</a>)</p>
